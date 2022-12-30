@@ -82,7 +82,7 @@ async function run() {
             res.send(task)
         })
 
-        // delete a book
+        // delete a task
         app.delete('/tasks/:taskId', async (req, res) => {
             const id = req.params.taskId
             const query = { _id: ObjectId(id) }
